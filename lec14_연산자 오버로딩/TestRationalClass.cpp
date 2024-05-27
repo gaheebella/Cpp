@@ -4,21 +4,21 @@ using namespace std;
 
 int main()
 {
-	//°´Ã¼ »ý¼º -> ÀÎ¼ö ÀÖ´Â »ý¼ºÀÚ È£Ãâ_ (ºÐÀÚ,ºÐ¸ð)
+	//ê°ì²´ ìƒì„± -> ì¸ìˆ˜ ìžˆëŠ” ìƒì„±ìž í˜¸ì¶œ_ (ë¶„ìž,ë¶„ëª¨)
 	Rational r1(4, 2); 
 	Rational r2(2, 3);
 
-	//¸â¹öÇÔ¼ö È£Ãâ
+	//ë©¤ë²„í•¨ìˆ˜ í˜¸ì¶œ
 	cout << r1.toString() << " + " << r2.toString() << " = " << r1.add(r2).toString() << endl;
 	cout << r1.toString() << " - " << r2.toString() << " = " << r1.subtract(r2).toString() << endl;
 	cout << r1.toString() << " * " << r2.toString() << " = " << r1.multiply(r2).toString() << endl;
 	cout << r1.toString() << " / " << r2.toString() << " = " << r1.divide(r2).toString() << endl;
 
-	//intValue ¿Í doubleValue ÇÔ¼ö È£Ãâ_ Â÷ÀÌ ºñ±³
+	//intValue ì™€ doubleValue í•¨ìˆ˜ í˜¸ì¶œ_ ì°¨ì´ ë¹„êµ
 	cout << "r2.intValue() is " << r2.intValue() << endl;
 	cout << "r2.doubleValue() is " << r2.doubleValue() << endl;
 
-	//compareTo ¿Í equals ÇÔ¼ö È£Ãâ_ r1ÀÌ r2º¸´Ù Å©¸é ¾ç¼ö, °°À¸¸é 0, ÀÛÀ¸¸é À½¼ö
+	//compareTo ì™€ equals í•¨ìˆ˜ í˜¸ì¶œ_ r1ì´ r2ë³´ë‹¤ í¬ë©´ ì–‘ìˆ˜, ê°™ìœ¼ë©´ 0, ìž‘ìœ¼ë©´ ìŒìˆ˜
 	cout << "r1.compareTo(r2) is " << r1.compareTo(r2) << endl;
 	cout << "r2.compareTo(r1) is " << r2.compareTo(r1) << endl;
 	cout << "r1.compareTo(r1) is " << r1.compareTo(r1) << endl;
