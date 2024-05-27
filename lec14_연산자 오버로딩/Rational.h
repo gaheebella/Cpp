@@ -6,31 +6,31 @@ using namespace std;
 class Rational
 {
 public:
-	//»ı¼ºÀÚ
+	//ìƒì„±ì
 	Rational();
 	Rational(int numerator, int denominator);
 
-	//private µ¥ÀÌÅÍÇÊµå Á¢±Ù
+	//private ë°ì´í„°í•„ë“œ ì ‘ê·¼
 	int getNumerator() const;
 	int getDenominator() const;
 
-	//Å¬·¡½ºÀÇ ¸â¹öÇÔ¼ö ¼±¾ğ
+	//í´ë˜ìŠ¤ì˜ ë©¤ë²„í•¨ìˆ˜ ì„ ì–¸
 	Rational add(const Rational& secondRational) const;
 	Rational subtract(const Rational& secondRational) const;
 	Rational multiply(const Rational& secondRational) const;
 	Rational divide(const Rational& secondRational) const;
 
-	//ÇÔ¼ö
+	//í•¨ìˆ˜
 	int compareTo(const Rational& secondRational) const;
 	bool equals(const Rational& secondRational) const;
-	int intValue() const; //Á¤¼ö°ª
-	double doubleValue() const; //½Ç¼ö°ª
-	string toString() const; //°´Ã¼ÀÇ »óÅÂ¸¦ ¹®ÀÚ¿­·Î º¯È¯
+	int intValue() const; //ì •ìˆ˜ê°’
+	double doubleValue() const; //ì‹¤ìˆ˜ê°’
+	string toString() const; //ê°ì²´ì˜ ìƒíƒœë¥¼ ë¬¸ìì—´ë¡œ ë³€í™˜
 
 private:
-	int numerator; //ºĞÀÚ
-	int denominator; //ºĞ¸ğ
-	static int gcd(int n, int d); //ÃÖ´ë°ø¾à¼ö_¸Å°³º¯¼ö(ºĞÀÚ,ºĞ¸ğ)
+	int numerator; //ë¶„ì
+	int denominator; //ë¶„ëª¨
+	static int gcd(int n, int d); //ìµœëŒ€ê³µì•½ìˆ˜_ë§¤ê°œë³€ìˆ˜(ë¶„ì,ë¶„ëª¨)
 };
 
 #endif 
